@@ -26,4 +26,9 @@ public class RoshamboTest {
         assertEquals(0, Roshambo.compareShapes(Roshambo.SCISSORS, Roshambo.SCISSORS));
         assertEquals(0, Roshambo.compareShapes(Roshambo.PAPER, Roshambo.PAPER));
     }
+
+
+    @Test
+    void compareShapesResultsInTie() {
+        assertEquals(0, Roshambo.compareShapes(Roshambo.ROCK, Roshambo.ROCK));
 }
